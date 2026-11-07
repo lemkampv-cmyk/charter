@@ -1,0 +1,40 @@
+contract:
+  timeout-seconds: 30        # so lange kann die zweite Partei gegenzeichnen
+  max-distance: 5.0          # max. Abstand beim Unterzeichnen
+
+charter:
+  uses-per-second: 20        # Abnutzung des Charters pro Sekunde
+  resistance-ticks: 1000
+  broken-stone-effects: true
+
+crest:
+  leech: true
+  bastion-chance: 0.25
+
+bonefly:
+  speed: 0.85
+  sprint-multiplier: 1.6
+  climb: 0.5
+  idle-despawn-seconds: 60
+
+mould:
+  radius: 8.0
+  damage: 2.0
+  attack-monsters: true
+
+caller-bell:
+  cooldown-seconds: 8
+
+chain-sword:
+  damage-multiplier: 1.3      # Zusatzschaden auf den Netherite-Basisschaden
+  chain-timeout-seconds: 0    # 0 = bleibt gekettet bis zum zweiten Treffer
+  finish-action: kill         # kill | ban | kick
+
+dominance:
+  start-radius: 60           # halbe Kantenlaenge der quadratischen Border
+  shrink-per-second: 0.25     # 60 / 0.25 = 240 s bis zum Schliessen
+  block-material: CRYING_OBSIDIAN
+  bound-damage: 2.0           # Schaden pro Sekunde, wenn die Border Gebundene erreicht
+  ban: true                   # false = nur kicken
+  ban-hours: 0                # 0 = dauerhaft
+  ban-reason: "Von der Divine Dominance verschlungen."

@@ -1,0 +1,17 @@
+name: Charter
+version: ${version}
+main: dev.charter.CharterPlugin
+api-version: '1.21.11'
+description: Contracts, covenants, and regrets - Paper-Nachbau der Charter-Mechaniken.
+commands:
+  charter:
+    description: Charter-Hauptbefehl
+    usage: /charter <give|term|break|trust|untrust|dominance|reload>
+    aliases: [ch]
+permissions:
+  charter.admin:
+    description: Items geben, Dominance-Zonen verwalten, Reload
+    default: op
+  charter.bypass:
+    description: Wird von der Divine Dominance weder gebunden noch gebannt
+    default: false
